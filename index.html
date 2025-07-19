@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>portofolio arlan</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Arlan Saputra</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for smooth scrolling and font */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Hide mobile menu initially */
+        #mobile-menu {
+            display: none;
+        }
+        /* Show mobile menu when open */
+        #mobile-menu.open {
+            display: block;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md rounded-b-lg mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex-shrink-0">
+                <a href="#" class="text-2xl font-bold text-indigo-600">
+                    [Arlan Saputra]
+                </a>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                    <a href="#home" class="nav-item px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors duration-200">Beranda</a>
+                    <a href="#about" class="nav-item px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors duration-200">Tentang</a>
+                    <a href="#skills" class="nav-item px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors duration-200">Keterampilan</a>
+                    <a href="#projects" class="nav-item px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors duration-200">Proyek</a>
+                    <a href="#contact" class="nav-item px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors duration-200">Kontak</a>
+                </div>
+            </div>
+            <!-- Mobile menu button -->
+            <div class="-mr-2 flex md:hidden">
+                <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <svg class="block h-6 w-6" id="menu-icon-closed" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg class="hidden h-6 w-6" id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="nav-item block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">Beranda</a>
+                <a href="#about" class="nav-item block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">Tentang</a>
+                <a href="#skills" class="nav-item block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">Keterampilan</a>
+                <a href="#projects" class="nav-item block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">Proyek</a>
+                <a href="#contact" class="nav-item block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-12"> <!-- Add padding top to account for fixed nav -->
+        <!-- Home Section -->
+        <section id="home" class="flex items-center justify-center min-h-[calc(100vh-6rem)] bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-16 px-4 rounded-b-3xl shadow-lg">
+            <div class="text-center max-w-3xl">
+                <h1 class="text-5xl sm:text-6xl font-extrabold mb-4 leading-tight">
+                    Halo, Saya <span class="text-yellow-300">[Arlan Saputra]</span>
+                </h1>
+                <p class="text-xl sm:text-2xl mb-8 opacity-90">
+                    Error itu makanan sehari-hari. Bug itu teman sejati. Tapi tenang, developer otodidak pantang menyerah!
+                </p>
+                <button onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })" class="bg-white text-indigo-600 hover:bg-indigo-100 px-8 py-3 rounded-full text-lg font-semibold shadow-xl transition-all duration-300 transform hover:scale-105">
+                    Lihat Proyek Saya
+                </button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/3 flex justify-center">
+                    <!-- URL GAMBAR PROFIL ANDA TELAH DIMASUKKAN DI SINI -->
+                    <img
+                        src="unnamed.jpg"
+                        alt="Foto Profil Arlan Saputra"
+                        class="rounded-full w-48 h-48 object-cover border-4 border-indigo-200 shadow-md"
+                    />
+                </div>
+                <div class="md:w-2/3 text-center md:text-left">
+                    <h2 class="text-4xl font-bold text-indigo-700 mb-6">Tentang Saya</h2>
+                    <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                        Hidupku adalah debug yang tak berkesudahan, tapi setidaknya aku bisa menciptakan sesuatu yang keren. Proud to be otodidak!
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Saya selalu bersemangat untuk mempelajari teknologi baru dan menghadapi tantangan yang menarik. Di luar coding, saya suka membaca buku, bermain music, dan menjelajahi hal-hal baru.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 bg-indigo-50 max-w-7xl mx-auto rounded-xl shadow-lg mt-12">
+            <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12">Keterampilan Saya</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Skill Card 1 -->
+                <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <svg class="h-12 w-12 text-indigo-500 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M2.002 10.998a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1zm0-6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1zm0 12a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-800">HTML5</h3>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <svg class="h-12 w-12 text-indigo-500 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M2.002 10.998a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1zm0-6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1zm0 12a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-800">CSS3</h3>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <svg class="h-12 w-12 text-indigo-500 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M2.002 10.998a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1zm0-6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1zm0 12a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-800">JavaScript</h3>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <svg class="h-12 w-12 text-indigo-500 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M2.002 10.998a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1zm0-6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1zm0 12a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-800">React.js (Dasar)</h3>
+                </div>
+                <!-- Skill Card 5 -->
+                <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <svg class="h-12 w-12 text-indigo-500 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M2.002 10.998a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1zm0-6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1zm0 12a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-800">Node.js (Dasar)</h3>
+                </div>
+                <!-- Skill Card 6 -->
+                <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <svg class="h-12 w-12 text-indigo-500 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M2.002 10.998a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1zm0-6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1zm0 12a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-800">Tailwind CSS</h3>
+                </div>
+                <!-- Skill Card 7 -->
+                <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <svg class="h-12 w-12 text-indigo-500 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.087-.744.084-.729.084-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.809 1.305 3.493.998.108-.776.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.293-1.552 3.301-1.23 3.301-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.564 21.797 24 17.292 24 12 24 5.373 18.627 0 12 0z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-800">Git & GitHub</h3>
+                </div>
+                <!-- Skill Card 8 -->
+                <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <svg class="h-12 w-12 text-indigo-500 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M2.002 10.998a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1zm0-6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1zm0 12a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2h-18a1 1 0 0 1-1-1z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-800">Figma</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12">Proyek Saya</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <!-- GANTI URL INI DENGAN URL GAMBAR PROYEK PERTAMA ANDA -->
+                    <!-- Contoh: src="https://yourwebsite.com/path/to/your/project1-image.jpg" -->
+                    <img
+                        src="https://placehold.co/600x400/6366F1/FFFFFF?text=Proyek+1"
+                        alt="Proyek 1"
+                        class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Aplikasi E-commerce</h3>
+                        <p class="text-gray-600 mb-4">
+                            Sebuah platform e-commerce lengkap yang dibangun dengan React dan Node.js, menampilkan fitur keranjang belanja, otentikasi pengguna, dan integrasi pembayaran.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium transition-colors duration-200">
+                                Lihat Demo
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-gray-700 transition-colors duration-200">
+                                <svg class="h-6 w-6 inline-block mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.087-.744.084-.729.084-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.809 1.305 3.493.998.108-.776.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.293-1.552 3.301-1.23 3.301-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.564 21.797 24 17.292 24 12 24 5.373 18.627 0 12 0z" />
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <!-- GANTI URL INI DENGAN URL GAMBAR PROYEK KEDUA ANDA -->
+                    <img
+                        src="https://placehold.co/600x400/6366F1/FFFFFF?text=Proyek+2"
+                        alt="Proyek 2"
+                        class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Sistem Manajemen Tugas</h3>
+                        <p class="text-gray-600 mb-4">
+                            Aplikasi web untuk mengelola tugas dan proyek, dengan fitur *drag-and-drop*, notifikasi, dan kolaborasi tim.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium transition-colors duration-200">
+                                Lihat Demo
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-gray-700 transition-colors duration-200">
+                                <svg class="h-6 w-6 inline-block mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.087-.744.084-.729.084-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.809 1.305 3.493.998.108-.776.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.293-1.552 3.301-1.23 3.301-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.564 21.797 24 17.292 24 12 24 5.373 18.627 0 12 0z" />
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <!-- GANTI URL INI DENGAN URL GAMBAR PROYEK KETIGA ANDA -->
+                    <img
+                        src="https://placehold.co/600x400/6366F1/FFFFFF?text=Proyek+3"
+                        alt="Proyek 3"
+                        class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Blog Pribadi</h3>
+                        <p class="text-gray-600 mb-4">
+                            Situs blog pribadi yang responsif dengan sistem manajemen konten sederhana dan fitur pencarian.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium transition-colors duration-200">
+                                Lihat Demo
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-gray-700 transition-colors duration-200">
+                                <svg class="h-6 w-6 inline-block mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.087-.744.084-.729.084-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.809 1.305 3.493.998.108-.776.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.293-1.552 3.301-1.23 3.301-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.564 21.797 24 17.292 24 12 24 5.373 18.627 0 12 0z" />
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-indigo-50 max-w-7xl mx-auto rounded-xl shadow-lg mt-12">
+            <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12">Hubungi Saya</h2>
+            <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <form id="contact-form">
+                    <div class="mb-6">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">
+                            Nama
+                        </label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200"
+                            placeholder="Nama Lengkap Anda"
+                            required
+                        />
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">
+                            Email
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200"
+                            placeholder="email@contoh.com"
+                            required
+                        />
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">
+                            Pesan
+                        </label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200 resize-y"
+                            placeholder="Tulis pesan Anda di sini..."
+                            required
+                        ></textarea>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button
+                            type="submit"
+                            class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full focus:outline-none focus:shadow-outline transition-colors duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
+                        >
+                            Kirim Pesan
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center rounded-t-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-sm">&copy; <span id="current-year"></span> [Arlan Saputra]. Hak Cipta Dilindungi.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <!-- Social Media Links - Placeholder Icons -->
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                    <!-- LinkedIn Icon -->
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                    <!-- GitHub Icon -->
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.087-.744.084-.729.084-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.809 1.305 3.493.998.108-.776.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.293-1.552 3.301-1.23 3.301-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.564 21.797 24 17.292 24 12 24 5.373 18.627 0 12 0z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                    <!-- Twitter Icon -->
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.403 0-6.157 2.76-6.157 6.157 0 .482.055.95.162 1.404-5.125-.259-9.664-2.711-12.709-6.424-.525.9-.828 1.948-.828 3.064 0 2.131 1.096 4.008 2.766 5.117-.81-.025-1.57-.248-2.23-.616v.078c0 2.986 2.127 5.474 4.956 6.04-.52.141-1.07.218-1.64.218-.402 0-.796-.039-1.183-.112.787 2.46 3.06 4.24 5.772 4.291-2.087 1.63-4.724 2.608-7.59 2.608-.493 0-.979-.029-1.46-.086 2.694 1.724 5.895 2.727 9.309 2.727 11.17 0 17.279-9.293 17.279-17.28 0-.264-.008-.528-.018-.791.94-.679 1.758-1.536 2.407-2.508z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        // Get current year for footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIconClosed = document.getElementById('menu-icon-closed');
+        const menuIconOpen = document.getElementById('menu-icon-open');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+            menuIconClosed.classList.toggle('hidden');
+            menuIconOpen.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a nav item is clicked
+        const navItems = document.querySelectorAll('.nav-item');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                if (mobileMenu.classList.contains('open')) {
+                    mobileMenu.classList.remove('open');
+                    menuIconClosed.classList.remove('hidden');
+                    menuIconOpen.classList.add('hidden');
+                }
+            });
+        });
+
+        // Highlight active section in navigation
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-item');
+
+        const highlightActiveNavLink = () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100; // Adjust for fixed nav height
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('bg-indigo-600', 'text-white', 'shadow-lg');
+                link.classList.add('text-gray-700', 'hover:bg-indigo-50', 'hover:text-indigo-600');
+                if (link.href.includes(current)) {
+                    link.classList.add('bg-indigo-600', 'text-white', 'shadow-lg');
+                    link.classList.remove('text-gray-700', 'hover:bg-indigo-50', 'hover:text-indigo-600');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', highlightActiveNavLink);
+        window.addEventListener('load', highlightActiveNavLink); // Highlight on page load
+
+        // Handle contact form submission (client-side only for this demo)
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent default form submission
+
+            // In a real application, you would send this data to a backend server.
+            // For this demo, we'll just show a custom message.
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Simple custom alert/message box logic
+            const messageBox = document.createElement('div');
+            messageBox.className = 'fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-[9999]';
+            messageBox.innerHTML = `
+                <div class="bg-white p-8 rounded-lg shadow-xl max-w-sm text-center">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Pesan Terkirim!</h3>
+                    <p class="text-gray-600 mb-6">Terima kasih, ${name}! Pesan Anda telah diterima. Saya akan segera menghubungi Anda.</p>
+                    <button id="close-message-box" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">Tutup</button>
+                </div>
+            `;
+            document.body.appendChild(messageBox);
+
+            document.getElementById('close-message-box').addEventListener('click', () => {
+                document.body.removeChild(messageBox);
+                contactForm.reset(); // Clear the form after closing the message
+            });
+        });
+    </script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
